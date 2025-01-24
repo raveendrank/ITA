@@ -18,4 +18,4 @@ jobs:
       shell: pwsh  # Use PowerShell Core (pwsh) on the runner
       run: |
         Set-ExecutionPolicy RemoteSigned -Scope Process -Force
-            .\getLTA.ps1 -License "my license" -RunnerOs "Windows"
+            .\getLTA.ps1 -License .\LTALicense\license.lic -model .\DemoModel.eapx 
